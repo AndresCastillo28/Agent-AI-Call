@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "dev": "node --watch src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -13,8 +14,17 @@
   "dependencies": {
     "@fastify/formbody": "^8.0.2",
     "@fastify/websocket": "^11.0.2",
+    "axios": "^1.7.9",
     "dotenv": "^16.4.7",
     "fastify": "^5.2.1",
-    "ws": "^8.18.0"
+    "form-data": "^4.0.2",
+    "mongoose": "^8.10.1",
+    "wavefile": "^11.0.0",
+    "ws": "^8.18.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
   }
 }
